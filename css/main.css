@@ -3,10 +3,12 @@ div.grid-parent {
   width: 100vw;
   height: 100vh;
   grid-template-areas:
-    "a a a a"
-    "b b c c"
-    "d e c c";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+  grid-template-columns: 1fr;
   row-gap: 20px;
   column-gap: 20px;
 }
@@ -41,3 +43,18 @@ div.blue {
   background-color: blue;
   grid-area: e;
 }
+
+@media only screen and (min-width: 60em) {
+
+  div.grid-parent {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+      "a a a a"
+      "b b c c"
+      "d e c c";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
