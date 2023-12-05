@@ -1,7 +1,6 @@
 div.grid-parent {
   display: grid;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   grid-template-areas:
     "a"
     "b"
@@ -11,6 +10,18 @@ div.grid-parent {
   grid-template-columns: 1fr;
   row-gap: 20px;
   column-gap: 20px;
+}
+
+div.grid-2 {
+  width: 50%;
+  margin: 0 auto;
+  grid-template-areas:
+  "a a"
+  "b c"
+  "d d"
+  "d d"
+  "e e";
+  grid-template-columns: 1fr;
 }
 
 .img-container img {
@@ -48,8 +59,7 @@ div.blue {
 
   div.grid-parent {
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     grid-template-areas:
       "a a a a"
       "b b c c"
@@ -57,4 +67,16 @@ div.blue {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
+  }
+
+  div.grid-2 {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-areas:
+    "a a"
+    "b c"
+    "d d"
+    "d d"
+    "e e";
+    grid-template-columns: 1fr 1fr;
   }
