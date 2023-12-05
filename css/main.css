@@ -1,3 +1,13 @@
+main {
+  position: relative;
+}
+
+.background-shape {
+  z-index: -1000;
+  width: 100%;
+  position: absolute;
+}
+
 div.grid-parent {
   display: grid;
   width: 100%;
@@ -31,27 +41,24 @@ div.grid-2 {
 }
 
 div.red {
-  background-color: red;
   grid-area: a;
+  opacity: 0.5;
 }
 
 div.orange {
-  background-color: orange;
   grid-area: b;
+  opacity: 0.5;
 }
 
 div.yellow {
-  background-color: yellow;
   grid-area: c;
 }
 
 div.green {
-  background-color: green;
   grid-area: d;
 }
 
 div.blue {
-  background-color: blue;
   grid-area: e;
 }
 
