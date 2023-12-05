@@ -1,0 +1,43 @@
+div.grid-parent {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+    "a a a a"
+    "b b c c"
+    "d e c c";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.red {
+  background-color: red;
+  grid-area: a;
+}
+
+div.orange {
+  background-color: orange;
+  grid-area: b;
+}
+
+div.yellow {
+  background-color: yellow;
+  grid-area: c;
+}
+
+div.green {
+  background-color: green;
+  grid-area: d;
+}
+
+div.blue {
+  background-color: blue;
+  grid-area: e;
+}
